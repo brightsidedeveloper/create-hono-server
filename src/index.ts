@@ -8,8 +8,6 @@ app.use('*', (c, next) => {
   return next()
 })
 
-app.get('/', (c) => {
-  return c.text('We up!')
-})
+app.get('/', (c) => c.text('We up!'))
 
 serve(app)
